@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Hello Android</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Calculator strings -->
+    <string name="equals_caption">=</string>
+    <string name="subtract_caption">-</string>
+    <string name="period_caption">.</string>
+    <string name="digit_0">0</string>
+    <string name="plus_caption">+</string>
+    <string name="digit_3">3</string>
+    <string name="digit_2">2</string>
+    <string name="digit_1">1</string>
+    <string name="divide_caption">/</string>
+    <string name="digit_6">6</string>
+    <string name="digit_5">5</string>
+    <string name="digit_4">4</string>
+    <string name="multiply_caption">*</string>
+    <string name="digit_9">9</string>
+    <string name="digit_8">8</string>
+    <string name="digit_7">7</string>
+    <string name="display_sample_text">3.14159</string>
+    <string name="calculator">Calculator</string>
+
+    <!-- Compass strings -->
+    <string name="latitudeString">Latitude: %1$s</string>
+    <string name="longitudeString">Longitude: %1$s</string>
+    <string name="altitudeString">Altitude: %1$sm</string>
+    <string name="speedString">Speed: %1$sm/s</string>
+    <string name="accuracyString">Accuracy: +/-%1$sm</string>
+    <string name="providerString">Provider: %1$s</string>
+    <string name="headingString">Heading: %1$s\u00b0</string>
+</resources>

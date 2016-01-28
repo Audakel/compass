@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/material_grey_300"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitudeString"
+        android:id="@+id/latitudeLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="8dp"
+        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitudeString"
+        android:id="@+id/longitudeLabel"
+        android:layout_below="@+id/latitudeLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/altitudeString"
+        android:id="@+id/altitudeLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/longitudeLabel"
+        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accuracyString"
+        android:id="@+id/errorLabel"
+        android:layout_below="@+id/altitudeLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/speedString"
+        android:id="@+id/speedLabel"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignBottom="@+id/latitudeLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/headingString"
+        android:id="@+id/headingLabel"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignTop="@+id/longitudeLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/providerString"
+        android:id="@+id/providerLabel"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignTop="@+id/altitudeLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/compassImage"
+        android:src="@drawable/compass_face"
+        android:layout_below="@+id/errorLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

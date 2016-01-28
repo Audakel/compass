@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="edu.byu.android.helloandroid.MainActivityFragment"
+    >
+
+    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="?android:attr/actionBarSize"
+                tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_margin="10dp"
+        android:id="@+id/topTextLabel"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainEditText"
+        android:layout_below="@+id/topTextLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Text to copy"
+        />
+
+    <Button
+        android:text="Copy to Label"
+        android:id="@+id/copyButton"
+        android:layout_below="@+id/mainEditText"
+        style="@style/MainButton"
+        />
+
+    <Button
+        android:text="Show the Wookie"
+        android:id="@+id/showWookieButton"
+        android:layout_below="@+id/copyButton"
+        style="@style/MainButton"
+        />
+
+    <Button
+        android:text="Calculator"
+        android:id="@+id/showCalculatorButton"
+        android:layout_below="@+id/showWookieButton"
+        style="@style/MainButton"
+        />
+
+    <Button
+        android:text="Compass"
+        android:id="@+id/showCompassButton"
+        android:layout_below="@+id/showCalculatorButton"
+        style="@style/MainButton"
+        />
+
+    <Button
+        android:text="Map"
+        android:id="@+id/showMapButton"
+        android:layout_below="@+id/showCompassButton"
+        style="@style/MainButton"
+        />
+
+    <Button
+        android:text="GPS Status"
+        android:id="@+id/showGPSStatusButton"
+        android:layout_below="@+id/showMapButton"
+        style="@style/MainButton"
+        />
+
+</RelativeLayout>
+</ScrollView>
