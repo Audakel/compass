@@ -73,8 +73,6 @@ public class CompassFragment extends Fragment {
         ImageView compassFace = (ImageView) getView().findViewById(R.id.compassImage);
 
         latitudeLabel.setText("LAT: " + String.valueOf(((CompassActivity)this.getActivity()).geoField));
-        longitudeLabel.setText("LONG: " + String.valueOf(((CompassActivity) this.getActivity()).mLongitude));
-        altitudeLabel.setText("ALT: " + String.valueOf(((CompassActivity) this.getActivity()).mAltitude));
         accuracyLabel.setText(getString(R.string.accuracyString, "42"));
         speedLabel.setText(getString(R.string.speedString, "1.4"));
         headingLabel.setText("HEADING: " + geoField.getDeclination());
